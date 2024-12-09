@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+  font-family: "Poppins", serif;
+
+    }
+.header{
+    min-height: 100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(http://images6.fanpop.com/image/photos/35600000/Anime-Characters-anime-universe-35612327-4098-2304.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 3%;
+    justify-content:space-between;
+    align-items:center;
+    }
+
+nav img{
+    width: 7%;
+    margin: 1%;
+    margin-left: 
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+    }
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 6px 14px;
+    position: relative;
+    }
+.nav-links ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    }
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+        height: 15px;
+    background: #346bff;
+    display: block;
+    margin: auto;
+    transition: 0.7s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 87%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{font-size: 57px;
+}
+.text-box p{
+    margin: 24px 0 40px;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    word-spacing: 4px;
+    line-height: 38px;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid rgb(41, 68, 101);
+    background: rgba(0, 76, 157, 0.7);
+    transition: 1s;
+}
+
+nav .material-symbols-outlined{
+    display: none;
+}
+
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 34px;
+    }
+    .text-box p{
+        font-size: 19px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links {
+    position: fixed; /* Fix the menu position */
+    background: #76b4ff;
+    height: 100vh; /* Full screen height */
+    width: 200px;
+    top: 0;
+    right: -200px; /* Hide initially */
+    text-align: left;
+    z-index: 1000; /* Ensure it overlaps all other content */
+    transition: 0.5s; /* Smooth slide-in/out */
+    overflow-y: auto; /* Ensure scrolling if menu items overflow */
+}
+    nav .material-symbols-outlined {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 30px;
+        cursor:pointer;
+        
+    }
+    .nav-links ul{
+        padding: 9px;
+    }
+}
+
+/*---------footer----------*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top:20px;
+    font-weight: 600;
+}
+
+.sub-header{
+    height:50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://popgeeknews.com/wp-content/uploads/2023/07/Cover-Jump-Festa-2024-860x484.webp);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
+.sub-header h1{
+    margin-top: 100px;
+    
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-col img{
+    width: 100%;
+}
+.about-col h1{
+    padding-top: 0;
+}
+.about-col p{
+    padding-top: 15px 0 25px;
+}
+.red-btn{
+    border: 1px solid #6aa3e1;
+    background: transparent;
+    color:rgb(81, 41, 101);
+}
+.red-btn:hover{
+    color:#fff;
+}
+
+
+/* Contact Section */
+.contact {
+    padding: 40px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-container label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-container input,
+.input-container textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.input-container input:focus,
+.input-container textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff2323;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #7c0000;
+}
+
+/* Thank-You Message */
+.thank-you-message {
+    display: none; /* Hidden by default */
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you-message h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.thank-you-message p {
+    font-size: 18px;
+    color: #555;
+}
+
+.thank-you-message .btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.thank-you-message .btn:hover {
+    background-color: #0056b3;
+}

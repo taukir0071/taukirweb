@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Taukir's Animeverse</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Material+Symbols+Outlined&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header Section -->
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="logo.png" alt="Logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <span class="material-symbols-outlined" onclick="hideMenu()">close</span>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact me.html">Contact Me</a></li>
+                        <li><a href="about.html">About</a></li>
+                        
+                    </ul>
+                </div>
+                <span class="material-symbols-outlined" onclick="showMenu()">menu</span>
+            </nav>
+            <div class="text-box">
+                <h1>Welcome TO Anime Universe</h1>
+                <p>Tokyo International University<br>Batch 2023<br>ID Number : 23229575</p>
+                <a href="about.html" class="hero-btn">Know About Anime !</a>
+            </div>     
+        </section>
+        
+        <section class="footer">
+        <h4>THINGS I HAVE DONE FOR CREATING THIS WEBPAGE</h4>
+<p><br>Structure: 
+Created the basic HTML structure for the homepage, including the 'head' and 'body' sections.
+<br>Navigation: 
+Implemented a responsive navigation bar with links to other pages (About, Blogs, Contact Me).
+<br>Hero Section:
+Designed an eye-catching hero section with a background image, a compelling headline, and a call-to-action button.
+<br>Footer:
+Included a footer section with basic information about yourself and social media links.
+<br>Styling: 
+Applied CSS for overall styling, including font choices, colors, and basic layout. </p>
+            <p>My name is Mithun Shahariar Taukir.<br>I am a student of Tokyo International University in Tokyo, Japan.
+            <br>My Major Is Digital Business & Innovation<br>23229575
+            </p>
+        </section>
+
+        <!-- JavaScript for Toggle Menu -->
+        <script>
+            const navLinks = document.getElementById("navLinks");
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu() {
+                navLinks.style.right = "-200px"; // Slide menu out of view
+            }
+
+            // Hide menu for larger screens
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 1200) {
+                    navLinks.style.right = "0"; // Keep menu hidden
+                    navLinks.style.display = "none"; // Hide nav for desktops
+                } else {
+                    navLinks.style.display = "block"; // Show nav for smaller screens
+                }
+            });
+        </script>
+    </body>
+</html>
